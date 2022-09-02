@@ -12,7 +12,7 @@ const OrderCount = require("./models/orderCount");
 const flash = require("connect-flash");
 const port = process.env.PORT;
 
-const dbURL = process.env.DATABASE_URL;
+const dbURL = process.env.DATABASEURL;
 mongoose.connect(dbURL,()=>{
 	console.log("Connected to DB");
 });
